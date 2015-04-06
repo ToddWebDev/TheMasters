@@ -1,0 +1,287 @@
+/*
+*   THE MASTERS - STYLE SHEET - 2015
+*           by Todd Rizzolo
+*
+*  If you are viewing this on a .css file than it is the compliled
+*  version of styles.scss file. Please view original within the 
+*  directory.
+*/
+
+// LIBRARY IMPORTS ---------------------------------------------------//
+@import "compass/css3.scss";
+@import "compass/utilities";
+
+// FONT EMBEDDING  ---------------------------------------------------//
+@include font-face("Libre", font-files("../fonts/LibreCaslon/LibreCaslonText-Bold.ttf"));
+@include font-face("Kel", font-files("../fonts/Kel/Kel.ttf"));
+@include font-face("Exo", font-files("../fonts/Exo/exo2-lightcondensed.otf"));
+@include font-face("Lekea", font-files("../fonts/Lekea/Lekea.otf"));
+
+// PRESENTATION VARIABLES  -------------------------------------------//
+$primaryColor: #003525;
+$darkPrimary: darken($primaryColor, 25%);
+$bgColor: #999;
+$altColor: #fdf100;
+$secColor: #cf0f42;
+$altColorWash: #F5FFB2;
+$navbarColor: lighten($primaryColor, 10%);
+$white: #efefef;
+$defaultSize: 22px;
+$padding: 100px;
+$rowHeight: 500px;
+$carouselHeight: 325px;
+$titleFont: "Libre", serif;
+$altTitleFont: "Kel", serif;
+$bodyFont: "Exo", sans-serif;
+
+// MIXIN DEFINITIONS -------------------------------------------------//
+@mixin border-side($side, $width, $style: solid, $color: #000){
+	-webkit-border-#{$side}: $width $style $color ;
+    -moz-border-#{$side}: $width $style $color ;
+    border-#{$side}: $width $style $color ;
+}
+
+
+// GLOBAL STYLES -----------------------------------------------------//
+body {
+	$primaryColor: $white;
+    font-family: $bodyFont;
+    font-size: $defaultSize;
+    background: $primaryColor;
+    color: $bgColor;
+//    min-height: 2000px;
+}
+h1 {
+    font-family: $titleFont;
+    font-size: 72px;
+    color: lighten($primaryColor, 15%);
+    & small {
+        font-family: $bodyFont;
+        color: $bgColor;
+    }
+    @media (max-width: 768px) {
+        font-size: 55px;
+    }
+    @media (max-width: 468px) {
+        font-size: 48px;
+		
+    }
+}
+h2 {
+    font-family: $bodyFont;
+    font-size: 42px;
+}
+.quotes {
+    background: lighten($primaryColor, 15%);
+    height: $carouselHeight;
+    @media (max-width: 468px) {
+        height: ($carouselHeight - 100px);
+        margin-top: $padding;
+    }
+}
+blockquote {
+    color: $white;
+    p, footer {
+        font-size: 32px;
+    }
+    footer {
+        color: $altColor;
+    }
+    @media (max-width: 468px){
+        p, footer {
+            font-size: 18px;
+        }
+    }
+}
+
+// NAVIGATION STYLES
+.navbar {
+    font-family: $titleFont;
+    background-color: $navbarColor;
+    opacity: .9;
+    font-size: 14px;
+    border: 0;
+      .dropdown-menu {
+        padding: 10px;
+        font-size: 10px;
+      }
+      .navbar-brand {
+        font-size: 24px;
+        color: $altColor;
+          &:hover {
+			color: darken($altColor, 15%);
+		}
+      }
+    
+}
+.navbar-default .navbar-nav > li > a {
+    font-family: $bodyFont;
+    color: $altColor;
+    letter-spacing: .1em;
+      &:hover {
+			background-color: darken($altColor, 15%);
+		}
+}
+.nav-tabs li.active a, .nav-tabs li.active a:hover {
+    @include border-side(top, 1px, solid, $secColor);
+    @include border-side(left, 1px, solid, $secColor);
+    @include border-side(right, 1px, solid, $secColor);
+}
+
+// LAYOUT STYLES
+.cover img {
+        position: absolute; 
+        top: 0; 
+        left: 0; 
+        right: 0; 
+        bottom: 0; 
+        margin: auto; 
+        min-width: 50%;
+        min-height: 50%;
+        @media (max-width: 768px) {
+            margin: 0;
+        }
+}
+.br {
+    margin-bottom: 100px;
+}
+#Title {
+    margin-top: 600px;
+    @media (max-width: 768px) {
+    
+    }
+    @media (max-width: 468px) {
+        margin-top: 300px;
+    }
+}
+.headline {
+    margin-top: 250px;
+    min-height: $rowHeight;
+    .btn {
+		font-family: $bodyFont;
+		font-size: 36px;
+		color: $bgColor;
+		margin-bottom: 10px;
+	}
+	.btn-alt {
+		background-color: $secColor;
+		color: $white;
+		&:hover {
+			background-color: darken($secColor, 15%);
+		}
+		.glyphicon {
+			font-size: 30px;
+		}
+	}
+    @media (max-width: 768px) {
+        margin-top: 100px;
+    }
+	@media (max-width: 468px) {
+		.btn {
+			font-size: 22px; 
+		}
+        .btn-alt .glyphicon {
+            font-size: 18px;
+        }
+	}
+}
+.info {
+    min-height: ($rowHeight + 300px);
+    margin-top: 150px;
+    background: $white;
+    a {
+        @include link-colors($primaryColor, lighten($primaryColor, 30%), $primaryColor);
+    }
+}
+.amen-corner {
+    position: relative;
+    min-height: ($rowHeight + 400px);
+    background: $altColorWash;
+    img .photo {
+        position: absolute; 
+        top: 0; 
+        left: 0; 
+        right: 0; 
+        bottom: 0; 
+        margin: auto; 
+        min-width: 50%;
+        min-height: 50%;
+        @media (max-width: 768px) {
+            margin: 0;
+        }
+    }
+    .br {
+        margin-bottom: 150px;
+    }
+    .cart  {
+        position: absolute;
+        bottom: -26px;
+        right: 50px;
+    }
+    @media (max-width: 468px) {
+        min-height: ($rowHeight - 100px);
+        .cart {
+            width: 100px;
+            bottom: -15px;
+        }
+        .br {
+            margin-bottom: 100px;;
+        }
+    }
+}
+
+// CAROUSEL 
+.carousel {
+  height: $carouselHeight;
+  margin-bottom: 60px;
+  @media (max-width: 468px) {
+        height: ($carouselHeight - 100px);
+    }
+}
+.carousel .item {
+  height: $carouselHeight;
+  background-color: lighten($primaryColor, 15%);
+  @media (max-width: 768px) {
+        margin-top: 75px;
+    }
+  @media (max-width: 468px) {
+        height: ($carouselHeight - 100px);
+    }
+}
+.carousel-indicators {
+    top: 10px;
+}
+
+// FOOTER
+.footer {
+    min-height: $rowHeight;
+//    background: #267F65;
+    background: lighten($primaryColor, 15%);
+    color: $white;    	
+    h3{
+        color: $altColor;
+		font-size: 42px;
+	}
+	a {
+		display: block;
+		@include link-colors(lighten($primaryColor, 45%), lighten($primaryColor, 30%), $primaryColor);
+	}
+	.glyphicon {
+		font-size: 12px;
+	}
+    address {
+        font-size: 18px;
+    }
+	@media (max-width: 768px) {
+        padding-bottom: 75px;
+		h3 {
+			font-size: 22px;
+		}
+        p {
+            font-size: 18px;
+        }
+        address {
+            font-size: 14px;
+        }
+	}
+}

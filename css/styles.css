@@ -1,0 +1,230 @@
+/*
+*   THE MASTERS - STYLE SHEET - 2015
+*           by Todd Rizzolo
+*
+*  If you are viewing this on a .css file than it is the compliled
+*  version of styles.scss file. Please view original within the 
+*  directory.
+*/
+@font-face {
+  font-family: "Libre";
+  src: url('/fonts/../fonts/LibreCaslon/LibreCaslonText-Bold.ttf?1363244912') format('truetype'); }
+@font-face {
+  font-family: "Kel";
+  src: url('/fonts/../fonts/Kel/Kel.ttf?1421952841') format('truetype'); }
+@font-face {
+  font-family: "Exo";
+  src: url('/fonts/../fonts/Exo/exo2-lightcondensed.otf?1415470977') format('opentype'); }
+@font-face {
+  font-family: "Lekea";
+  src: url('/fonts/../fonts/Lekea/Lekea.otf?1402974446') format('opentype'); }
+body {
+  font-family: "Exo", sans-serif;
+  font-size: 22px;
+  background: #efefef;
+  color: #999; }
+
+h1 {
+  font-family: "Libre", serif;
+  font-size: 72px;
+  color: #00825a; }
+  h1 small {
+    font-family: "Exo", sans-serif;
+    color: #999; }
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 55px; } }
+  @media (max-width: 468px) {
+    h1 {
+      font-size: 48px; } }
+
+h2 {
+  font-family: "Exo", sans-serif;
+  font-size: 42px; }
+
+.quotes {
+  background: #00825a;
+  height: 325px; }
+  @media (max-width: 468px) {
+    .quotes {
+      height: 225px;
+      margin-top: 100px; } }
+
+blockquote {
+  color: #efefef; }
+  blockquote p, blockquote footer {
+    font-size: 32px; }
+  blockquote footer {
+    color: #fdf100; }
+  @media (max-width: 468px) {
+    blockquote p, blockquote footer {
+      font-size: 18px; } }
+
+.navbar {
+  font-family: "Libre", serif;
+  background-color: #006849;
+  opacity: .9;
+  font-size: 14px;
+  border: 0; }
+  .navbar .dropdown-menu {
+    padding: 10px;
+    font-size: 10px; }
+  .navbar .navbar-brand {
+    font-size: 24px;
+    color: #fdf100; }
+    .navbar .navbar-brand:hover {
+      color: #b1a800; }
+
+.navbar-default .navbar-nav > li > a {
+  font-family: "Exo", sans-serif;
+  color: #fdf100;
+  letter-spacing: .1em; }
+  .navbar-default .navbar-nav > li > a:hover {
+    background-color: #b1a800; }
+
+.nav-tabs li.active a, .nav-tabs li.active a:hover {
+  -webkit-border-top: 1px solid #cf0f42;
+  -moz-border-top: 1px solid #cf0f42;
+  border-top: 1px solid #cf0f42;
+  -webkit-border-left: 1px solid #cf0f42;
+  -moz-border-left: 1px solid #cf0f42;
+  border-left: 1px solid #cf0f42;
+  -webkit-border-right: 1px solid #cf0f42;
+  -moz-border-right: 1px solid #cf0f42;
+  border-right: 1px solid #cf0f42; }
+
+.cover img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  min-width: 50%;
+  min-height: 50%; }
+  @media (max-width: 768px) {
+    .cover img {
+      margin: 0; } }
+
+.br {
+  margin-bottom: 100px; }
+
+#Title {
+  margin-top: 600px; }
+  @media (max-width: 468px) {
+    #Title {
+      margin-top: 300px; } }
+
+.headline {
+  margin-top: 250px;
+  min-height: 500px; }
+  .headline .btn {
+    font-family: "Exo", sans-serif;
+    font-size: 36px;
+    color: #999;
+    margin-bottom: 10px; }
+  .headline .btn-alt {
+    background-color: #cf0f42;
+    color: #efefef; }
+    .headline .btn-alt:hover {
+      background-color: #880a2b; }
+    .headline .btn-alt .glyphicon {
+      font-size: 30px; }
+  @media (max-width: 768px) {
+    .headline {
+      margin-top: 100px; } }
+  @media (max-width: 468px) {
+    .headline .btn {
+      font-size: 22px; }
+    .headline .btn-alt .glyphicon {
+      font-size: 18px; } }
+
+.info {
+  min-height: 800px;
+  margin-top: 150px;
+  background: #efefef; }
+  .info a {
+    color: #003525; }
+    .info a:hover {
+      color: #00ce90; }
+    .info a:active {
+      color: #003525; }
+
+.amen-corner {
+  position: relative;
+  min-height: 900px;
+  background: #F5FFB2; }
+  .amen-corner img .photo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    min-width: 50%;
+    min-height: 50%; }
+    @media (max-width: 768px) {
+      .amen-corner img .photo {
+        margin: 0; } }
+  .amen-corner .br {
+    margin-bottom: 150px; }
+  .amen-corner .cart {
+    position: absolute;
+    bottom: -26px;
+    right: 50px; }
+  @media (max-width: 468px) {
+    .amen-corner {
+      min-height: 400px; }
+      .amen-corner .cart {
+        width: 100px;
+        bottom: -15px; }
+      .amen-corner .br {
+        margin-bottom: 100px; } }
+
+.carousel {
+  height: 325px;
+  margin-bottom: 60px; }
+  @media (max-width: 468px) {
+    .carousel {
+      height: 225px; } }
+
+.carousel .item {
+  height: 325px;
+  background-color: #00825a; }
+  @media (max-width: 768px) {
+    .carousel .item {
+      margin-top: 75px; } }
+  @media (max-width: 468px) {
+    .carousel .item {
+      height: 225px; } }
+
+.carousel-indicators {
+  top: 10px; }
+
+.footer {
+  min-height: 500px;
+  background: #00825a;
+  color: #efefef; }
+  .footer h3 {
+    color: #fdf100;
+    font-size: 42px; }
+  .footer a {
+    display: block;
+    color: #1cffba; }
+    .footer a:hover {
+      color: #00ce90; }
+    .footer a:active {
+      color: #003525; }
+  .footer .glyphicon {
+    font-size: 12px; }
+  .footer address {
+    font-size: 18px; }
+  @media (max-width: 768px) {
+    .footer {
+      padding-bottom: 75px; }
+      .footer h3 {
+        font-size: 22px; }
+      .footer p {
+        font-size: 18px; }
+      .footer address {
+        font-size: 14px; } }
