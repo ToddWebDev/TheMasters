@@ -8,21 +8,24 @@
 */
 @font-face {
   font-family: "Libre";
-  src: url('/fonts/../fonts/LibreCaslon/LibreCaslonText-Bold.ttf?1363244912') format('truetype'); }
+  src: url('../fonts/LibreCaslon/LibreCaslonText-Bold.ttf?1363244912') format('truetype'); }
 @font-face {
   font-family: "Kel";
-  src: url('/fonts/../fonts/Kel/Kel.ttf?1421952841') format('truetype'); }
+  src: url('../fonts/Kel/Kel.ttf?1421952841') format('truetype'); }
 @font-face {
   font-family: "Exo";
-  src: url('/fonts/../fonts/Exo/exo2-lightcondensed.otf?1415470977') format('opentype'); }
+  src: url('../fonts/Exo/Exo2-LightCondensed.otf?1415470977') format('opentype'); }
 @font-face {
   font-family: "Lekea";
-  src: url('/fonts/../fonts/Lekea/Lekea.otf?1402974446') format('opentype'); }
+  src: url('../fonts/Lekea/Lekea.otf?1402974446') format('opentype'); }
 body {
   font-family: "Exo", sans-serif;
   font-size: 22px;
   background: #efefef;
   color: #999; }
+  @media (max-width: 468px){
+	body{
+	  font-size: 18px; } }
 
 h1 {
   font-family: "Libre", serif;
@@ -144,7 +147,9 @@ blockquote {
     .headline .btn {
       font-size: 22px; }
     .headline .btn-alt .glyphicon {
-      font-size: 18px; } }
+      font-size: 18px; }
+    .headline {
+      margin-top: 60px; } }
 
 .info {
   min-height: 800px;

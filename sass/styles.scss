@@ -136,8 +136,12 @@ blockquote {
         right: 0; 
         bottom: 0; 
         margin: auto; 
-        min-width: 50%;
-        min-height: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        @media (max-width: 1200px) {
+            min-width: 50%;
+            min-height: 50%;
+        }
         @media (max-width: 768px) {
             margin: 0;
         }
@@ -146,9 +150,9 @@ blockquote {
     margin-bottom: 100px;
 }
 #Title {
-    margin-top: 600px;
-    @media (max-width: 768px) {
-    
+    margin-top: 850px;
+    @media (max-width: 1200px) {
+        margin-top: 600px;
     }
     @media (max-width: 468px) {
         margin-top: 300px;
@@ -204,8 +208,12 @@ blockquote {
         right: 0; 
         bottom: 0; 
         margin: auto; 
-        min-width: 50%;
-        min-height: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        @media (max-width: 1200px) {
+            min-width: 50%;
+            min-height: 50%;
+        }
         @media (max-width: 768px) {
             margin: 0;
         }

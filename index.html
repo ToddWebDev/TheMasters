@@ -13,8 +13,8 @@
 		<meta name="location" content="Nashville, Tennessee">
 		
 	   <!-- CSS -->
-		<link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-		<link href="css/styles.css" rel='stylesheet'>
+		<link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/themasters-styles.css" rel='stylesheet'>
 		
 		<!-- ICONS/TILES/WHATEVER REALLY NEED A MORE UNIVERSAL STANDARD -->  
 	<link rel="shortcut icon" sizes="16x16 24x24 32x32 48x48 64x64" href="../images/faveicon.ico.png" type="image/x-icon">
@@ -29,7 +29,7 @@
 	<link rel="apple-touch-icon" sizes="180x180" href="../images/favicon-180.png">
 
 
-    <title>The Masters | Golf's Greatest Event</title>
+    <title>The Masters | Golf's Greatest Championship</title>
     
 </head>
 
@@ -69,20 +69,22 @@
             <div class="col-md-push-2 col-md-8 col-sm-push-1 col-sm-10 headline">
 			<h1>THE MASTERS&reg;</h1>
             <h2>Golf's Greatest Championship</h2>
-			<p>On the first week of April the worlds greatest golfers gather for the first Major Championship of the year in Augusta, Georgia</p>
-        <p>2015 will be the 81st Annual Masters Tournament.</p><br>
+			<p>On the first week of April the worlds greatest golfers gather for the first Major Championship of the year in Augusta, Georgia.</p>
+        <p>2018 will be the 84th Annual Masters Tournament.</p><br>
 			<a class="btn btn-default btn-lg" href="#info">Want to know more?</a>
-			<a class="btn btn-default btn-lg btn-alt" href="http://www.themasters.com" target="_blank">Witness. <span class="glyphicon glyphicon-flag"></span></a>
+			<a class="btn btn-default btn-lg btn-alt" href="http://www.masters.com" target="_blank">Witness. <span class="glyphicon glyphicon-flag"></span></a>
 			</div>
     </div>
     <div class="row quotes">
-   <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="10000">
+   <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="6000">
       <!-- Indicators -->
       <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
         <li data-target="#myCarousel" data-slide-to="1"></li>
         <li data-target="#myCarousel" data-slide-to="2"></li>
         <li data-target="#myCarousel" data-slide-to="3"></li>
+        <li data-target="#myCarousel" data-slide-to="4"></li>
+        <li data-target="#myCarousel" data-slide-to="5"></li>
       </ol>
       <div class="carousel-inner" role="listbox">
         <div class="item active">
@@ -125,6 +127,26 @@
             </div>
           </div>
         </div>
+        <div class="item">
+          <div class="container">
+            <div class="carousel-caption">
+            <blockquote>
+  <p>The gap, it wasn't huge, but it was big enough, you know, for a ball to fit through.</p>
+  <footer>Phil Mickelson on his miraculous 200-yard six iron to the 13th from the pine trees in 2010 </footer>
+</blockquote>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="container">
+            <div class="carousel-caption">
+            <blockquote class="blockquote-reverse">
+  <p>It's amazing. To do it on his 60th birthday and to join him and Olazabal, my two idols in golf my whole life, it's something amazing.</p>
+  <footer>Sergio Garcia told CBS' Jim Nantz in 2017 </footer>
+</blockquote>
+            </div>
+          </div>
+        </div>
       </div>
      </div>
     </div>
@@ -132,16 +154,17 @@
     <div class="container">
     <div class="row info">
         <h1 class="text-center br" >A Tradition like no other.</h1>
-     <div class="col-md-4 col-sm-4">
+     <div class="col-md-4">
         <img src="images/masters-logo.png" alt="The Masters" class="img-responsive center-block br" />
         </div>
-        <div class="col-md-4 col-sm-8 br">
+        <div class="col-md-8 br">
         <div role="tabpanel">
   <!-- Tabs -->
   <ul class="nav nav-tabs " role="tablist">
-    <li class="disabled"><a role="tab">Course <span class="glyphicon glyphicon-info-sign"></span></a></li>
+    <li class="disabled hidden-xs"><a role="tab">Course <span class="glyphicon glyphicon-info-sign"></span></a></li>
     <li class="active"><a href="#front9" aria-controls="variables" role="tab" data-toggle="tab">Front 9</a></li>
     <li><a href="#back9" aria-controls="nesting" role="tab" data-toggle="tab">Back 9</a></li>
+    <li><a href="#winners" aria-controls="nesting" role="tab" data-toggle="tab">Champions</a></li>
   </ul>
 </div> <!-- end Tabs -->
          <!-- Tab panes -->
@@ -159,10 +182,10 @@
         <tr><td>8</td><td>5</td><td>570 yds</td></tr>
         <tr><td>9</td><td>4</td><td>460 yds</td></tr>
       </table>
-      </div>
-       <div role="tabpanel" class="tab-pane fade" id="back9">
+    </div>
+    <div role="tabpanel" class="tab-pane fade" id="back9">
       <table class="table table-condensed">
-         <tr><th>Hole #</th><th>Par</th><th>Yards</th></tr> 
+        <tr><th>Hole #</th><th>Par</th><th>Yards</th></tr> 
         <tr><td>10</td><td>4</td><td>495 yds</td></tr>
         <tr><td>11</td><td>4</td><td>505 yds</td></tr>
         <tr><td>12</td><td>3</td><td>155 yds</td></tr>
@@ -173,11 +196,40 @@
         <tr><td>17</td><td>4</td><td>440 yds</td></tr>
         <tr><td>18</td><td>4</td><td>465 yds</td></tr>
       </table>
-      </div>
+    </div>
+    <div role="tabpanel" class="tab-pane fade" id="winners">
+      <table class="table table-condensed">
+         <tr><th>Year</th><th>Golfer</th><th>Score</th></tr> 
+         <tr><td>2018</td><td></td><td></td></tr>
+         <tr><td>2017</td><td>Sergio Garcia</td><td>279</td></tr>
+         <tr><td>2016</td><td>Danny Willett</td><td>283</td></tr>
+         <tr><td>2015</td><td>Jordan Spieth</td><td>270</td></tr>
+         <tr><td>2014</td><td>Bubba Watson</td><td>280</td></tr>
+         <tr><td>2013</td><td>Adam Scott</td><td>279</td></tr>
+         <tr><td>2012</td><td>Bubba Watson</td><td>278</td></tr>
+         <tr><td>2011</td><td>Charl Schwartzel</td><td>274</td></tr>
+         <tr><td>2010</td><td>Phil Mickelson</td><td>272</td></tr>
+         <tr><td>2009</td><td>Angel Cabrera</td><td>276</td></tr>
+         <tr><td>2008</td><td>Trevor Immelman</td><td>280</td></tr>
+         <tr><td>2007</td><td>Zach Johnson</td><td>289</td></tr>
+         <tr><td>2006</td><td>Phil Mickelson</td><td>281</td></tr>
+         <tr><td>2005</td><td>Tiger Woods</td><td>276</td></tr>
+         <tr><td>2004</td><td>Phil Mickelson</td><td>279</td></tr>
+         <tr><td>2003</td><td>Mike Weir</td><td>281</td></tr>
+         <tr><td>2002</td><td>Tiger Woods</td><td>276</td></tr>
+         <tr><td>2001</td><td>Tiger Woods</td><td>272</td></tr
+         <tr><td>2000</td><td>Vijay Singh</td><td>278</td></tr>
+         <tr><td>1999</td><td>Jose Maria Olazabal</td><td>280</td></tr>
+         <tr><td>1998</td><td>Mark O'Meara</td><td>279</td></tr>
+         <tr><td>1997</td><td>Tiger Woods</td><td>270</td></tr>
+      </table>
+    </div>
     </div> <!-- end tab-content -->      
       </div>
-        <div class="hidden-xs hidden-md hidden-lg col-sm-4"><img src="images/golfer.png" alt="" class="image-responsive" /></div>
-        <div class="col-md-4 col-sm-8">
+      </div>
+      <div class="row">
+        <!--<div class="hidden-xs hidden-md hidden-lg col-sm-4"><img src="images/golfer.png" alt="" class="image-responsive" /></div>-->
+        <div class="col-md-12">
          <div class="panel panel-default">
   <div class="panel-heading">Tournament Schedule</div>
              <div class="panel-body">Monday - Practice Rounds <small><span class="label label-success">GC</span></small><br>
@@ -192,10 +244,11 @@
   </div>
  </div>
 </div>
+</div>
      </div>
     </div>
      <div class="row amen-corner">
-        <img src="images/amencorner.jpg" class="img-responsive photo br" />
+        <img src="images/amencorner.jpg" class="img-responsive photo br" style="width:100%;" />
         <img src="images/golfcart.png" class="img-repsonsive cart" />
         <div class="col-md-12">
          <h1 class="text-center">Amen.</h1>
@@ -213,17 +266,17 @@
                 Augusta, GA 30904 <br>
                 <abbr title="Phone">P:</abbr> (706) 667-6000
                 </address>
-            <a href="http://www.themasters.com" target="_blank">View Official Website</a>
+            <a href="http://www.masters.com" target="_blank">View Official Website</a>
             <br>
             <p>This page is styled with SASS.</p>
-			<a href="styles.scss" target="_blank">View Sass File</a>
+			<a href="themasters-styles.scss" target="_blank">View Sass File</a>
 		</div>
 		<div class="col-md-3 col-sm-3">
 			<h3>Resources</h3>
 			<p>Registered Trademarks &amp; Logos provided by:</p>
 		<a href="http://sass-lang.com">Sass <span class="glyphicon glyphicon-registration-mark"></span></a>
-		<a href="https://getbootsrap.com">Bootstrap <span class="glyphicon glyphicon-registration-mark"></span></a>
-            <a href="https://www.themasters.com">The Masters <span class="glyphicon glyphicon-registration-mark"></span></a>
+		<a href="http://getbootsrap.com">Bootstrap <span class="glyphicon glyphicon-registration-mark"></span></a>
+            <a href="http://www.themasters.com">The Masters <span class="glyphicon glyphicon-registration-mark"></span></a>
 
 		</div>
 		<div class="col-md-3 col-sm-3">
@@ -243,7 +296,7 @@
     
     <!-- VENDOR/SERVICES -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bootstrap/dist/js/bootstrap.min.js"></script>
     
     <!-- CUSTOM JAVASCRIPT -->
      <script>
